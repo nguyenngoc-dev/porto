@@ -46,7 +46,7 @@ img {vertical-align: middle;}
   top: 50%;
   width: auto;
   padding: 8px 15px;
-  margin: -22px 30px;
+  margin: -22px 20px;
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -228,7 +228,7 @@ img {vertical-align: middle;}
   position: absolute;
   bottom: 0;
   width: 100%;
-  margin-bottom: 48px; 
+  margin-bottom: 20px; 
   display: none;
   transition: all linear 0.3s;
 }
