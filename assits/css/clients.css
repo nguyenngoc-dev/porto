@@ -2,11 +2,11 @@
     background-image: url('https://www.okler.net/previews/porto/9.1.0/img/bg-one-page-1-1.jpg');
     background-position: center;
     background-size: cover;
-    padding:70px 0;
+    padding:110px 0;
     height:auto;
     position: relative;
     margin-top: 30px;
-    margin-bottom: 80px;
+    
 }
 .clients-overlay{
     background-color: #292e34;
@@ -34,7 +34,7 @@
     color:white;
     opacity: 0.7;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     margin-top: 15px;
 }
 .clients-list .owl-dots{

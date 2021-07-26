@@ -1,0 +1,81 @@
+.social{
+    background-color:var(--primary-color);
+    padding: 50px 0;
+}
+
+.social-address{
+    display: flex;
+}
+
+.social-location{
+
+}
+
+.social-location-icon{
+    font-size: 2.5rem;
+    color:white;
+    padding:16px;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.social-location-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.social-location-heading{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color:white;
+    opacity: 0.7;
+    margin: 0;
+
+}
+
+.social-location-pg{
+    font-size: 1.4rem;
+    color:white;
+    margin: 0;
+    font-weight: 700;
+}
+.social-location-pg:hover{
+    color: white;
+    text-decoration: none;
+}
+.social-location-pg-list{
+    margin-bottom: 0;
+    margin-top: 6px;
+}
+.social-loction-link{
+    height:unset;
+    width: unset;
+    margin-right: 8px;
+}
+.social-loction-link-app{
+    margin-left: 8px;
+    font-size: 1.4rem;
+    text-transform:uppercase;
+    font-weight: 700;
+}
+@media (max-width:1023px){
+    .social-address {
+        display:unset;
+        text-align: center;
+    }
+    .social-location-icon{
+        transform: unset;
+    }
+    .social-location-pg-list {
+        width: 100%;
+        justify-content: center;
+    }
+    .social-location-heading {
+        margin-bottom: 8px;
+    }
+    .social-location-pg{
+        margin-bottom: 12px;
+    }
+}
