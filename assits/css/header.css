@@ -1,16 +1,24 @@
 .header{
     height:var(--header-height);
-    background-color: black;
+    background-color:transparent;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all linear 0.2s;
 }
 
 .header-content{
     display: flex;
     height: 100%;
+    position: relative;
 }
 
 .header-container{
     height: 100%;
 }
+/* logo */
 .header-logo{
    height:100%;
 }
@@ -25,3 +33,140 @@
     height: 40px;
 }
 
+/*nav menu  */
+.header-nav{
+    transition: all linear 0.3s;
+    
+}
+
+.header-nav__list{
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-nav__item{
+    padding: 0 15px;
+    display: block;
+    height: 100%;
+}
+
+.header-nav__item--link{
+    text-decoration: none !important;
+    font-size: 1.4rem;
+    /* line-height: var(--header-height); */
+    text-transform: uppercase;
+    color: var(--white-color);
+    transition: all linear 0.2s;
+    position: relative;
+    top: 40%;
+
+}
+.header-nav__item--link:hover{
+    color:#08c;
+}
+.header-sub-nav__menu{
+    position: relative;
+}
+
+.header-sub-nav__list{
+    position: absolute;
+    top:100%;
+    left:0;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    width: 200px;
+    background-color: #282828;
+    display: none;
+    animation: FadeIn linear 0.1s;
+}
+
+.header-sub-nav__item{
+
+}
+
+.header-sub-nav__link{
+    color:#adadad;
+    text-decoration:none ;
+    font-size: 1.3rem;
+    padding:12px 20px;
+    display: block;
+    transition: all linear 0.2s;
+}
+.header-sub-nav__link:hover{
+    color:var(--white-color);
+    background-color: #353131;
+}
+.header-sub-nav__menu-show:hover{
+
+}
+.header-nav__item--link:first-child:hover ~.header-sub-nav__list{
+    display: block;
+    
+}
+.header-menu__mt{
+    height: 100%;
+}
+
+.header-menu___mt--btn{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.header-menu___mt--btn-icon{
+    color:var(--white-color);
+    font-size: 1.4rem;
+    background-color: var(--primary-color);
+    padding: 12px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* tool bar fixed */
+.tool-bar{
+    position: fixed;
+    top: 130px;
+    left: 0;
+    z-index: 5;
+}
+
+.tool-bar__list{
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.tool-bar__item{
+    height: 40px;
+    width: 40px;
+    margin-bottom: 1px;
+    background-color: #151719;
+    border-radius: 0 3px 3px 0;
+}
+
+.tool-bar__link{
+    color: var(--white-color);
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 40px;
+    padding-left: 30%;
+
+}
+
+.tool-bar__icon{
+
+}
+.tool-bar__img{
+    width:16px;
+    height:16px;
+}
+.tool-bar__link:hover{
+    color:var(--white-color);
+}

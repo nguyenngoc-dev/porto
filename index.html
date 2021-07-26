@@ -6,19 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porto</title>
     <link rel="icon" href="./assits/img/cilcle.jpg" sizes="16x16" type="image/png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="./assits/owlcarousel/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="assits/font/themify-font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="/assits/font/fontawesome/fontawesome-free-5.15.3-web/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assits/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assits/owlcarousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="./assits/css/base.css">
     <link rel="stylesheet" href="./assits/css/grid.css">
     <link rel="stylesheet" href="./assits/css/header.css">
+    <link rel="stylesheet" href="./assits/css/container.css">
+    <link rel="stylesheet" href="./assits/css/responsive.css">
+    <link rel="stylesheet" href="./assits/css/slider.css">
+    <link rel="stylesheet" href="./assits/css/services.css">
+    <link rel="stylesheet" href="./assits/css/projects.css">
+    <link rel="stylesheet" href="./assits/css/clients.css">
+    <link rel="stylesheet" href="./assits/css/team.css">
+    
 </head>
 <body>
     <div class="main">
+        <!-- go to top -->
+        <a id="btn" style="position: fixed;
+        bottom: 0px;
+        right: 10px;
+        padding: 10px 18px;
+        background-color: rgb(69, 67, 67);
+        opacity: 0.7;
+        color: white;
+        border-radius: 3px 3px 0px 0px;
+        display: none;
+        cursor: pointer;
+        z-index: 100;">
+            <i class="fas fa-angle-up" style="font-size: 20px;">
+            </i>
+        </a>
+        <!-- tool bar fixed -->
+        <div class="tool-bar">
+            <ul class="tool-bar__list">
+                <li class="tool-bar__item">
+                    <a href="" class="tool-bar__link" data-toggle="tooltip" data-placement="right" title="Style Switcher">
+                        <i class="tool-bar__icon fas fa-cogs"></i>
+                    </a>
+                    </li>
+                <li class="tool-bar__item">
+                    <a href="" class="tool-bar__link" data-toggle="tooltip" data-placement="right" title="Buy Porto" >
+                        <i class="tool-bar__icon fas fa-shopping-cart"></i>
+                    </a>
+                    </li>
+                <li class="tool-bar__item">
+                    <a href="" class="tool-bar__link" data-toggle="tooltip" data-placement="right" title="Demos ">
+                        <img class="tool-bar__img"  src="https://www.okler.net/previews/porto/9.1.0/img/icons/demos-redirect.png">
+                    </a>
+                    </li>
+            </ul>
+        </div>
         <header class="header">
             <div class="grid wide header-container">
                 <div class="row header-content">
+                    <!-- logo -->
                     <div class="col l-4 m-6 c-6 full-height">
                         <div class="header-logo">
                             <a href="" class="header-logo__link">
@@ -27,37 +78,56 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col l-8 m-0 full-height">
-                        <nav class="header-nav">
-                            <ul class="header-nav__list">
+                    <!-- nav menu -->
+                    <div class="col l-8 m-6 c-6 full-height">
+                        <div class="header-menu__mt l-0">
+                            <div class="header-menu___mt--btn" data-toggle="collapse" data-target="#demo" >
+                                <i class="fas fa-bars header-menu___mt--btn-icon"></i>
+                            </div>
+                        </div>
+                        <nav class="header-nav full-height collapse" id="demo">
+                            <ul class="header-nav__list full-height" >
+                                <li class="header-nav__item header-sub-nav__menu">
+                                    <a href="#home" class="header-nav__item--link active active-mt">
+                                        Home
+                                    </a>
+                                    <ul class="header-sub-nav__list">
+                                        <li class="header-sub-nav__item">
+                                            <a href="" class="header-sub-nav__link border-bottom">
+                                                Default Home
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="header-sub-nav__item">
+                                            <a href="" class="header-sub-nav__link">
+                                                One Page Website
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
                                 <li class="header-nav__item">
-                                    <a href="" class="header-nav__item--link">
-
+                                    <a href="#sevices" class="header-nav__item--link border-bottom-mt">
+                                        Sevices
                                     </a>
                                 </li>
                                 <li class="header-nav__item">
-                                    <a href="" class="header-nav__item--link">
-
+                                    <a href="#project" class="header-nav__item--link border-bottom-mt">
+                                        Projects
                                     </a>
                                 </li>
                                 <li class="header-nav__item">
-                                    <a href="" class="header-nav__item--link">
-
+                                    <a href="#client" class="header-nav__item--link border-bottom-mt">
+                                        clients
                                     </a>
                                 </li>
                                 <li class="header-nav__item">
-                                    <a href="" class="header-nav__item--link">
-
+                                    <a href="#team" class="header-nav__item--link border-bottom-mt">
+                                        Meet the team
                                     </a>
                                 </li>
                                 <li class="header-nav__item">
-                                    <a href="" class="header-nav__item--link">
-
-                                    </a>
-                                </li>
-                                <li class="header-nav__item">
-                                    <a href="" class="header-nav__item--link">
-
+                                    <a href="#contact" class="header-nav__item--link">
+                                        Contact us
                                     </a>
                                 </li>
                             </ul>
@@ -67,6 +137,580 @@
                 
             </div>
         </header>
+        <div class="content" style="height:5000px">
+           <!-- slider -->
+            <div class="slider">
+
+               <div class="slideshow-container">
+    
+                     <div class="mySlides fades">
+                        
+                         <div style="width:100%; background-image: url('https://www.okler.net/previews/porto/9.1.0/img/slides/slide-one-page-1-1.jpg')" class="mySlides-img">
+                             <div class="my-slide__img--br"></div>
+                         </div>
+                         <div class="slider-content__first">
+                            <div class="slider-content__first-line">
+                                <img src="https://www.okler.net/previews/porto/9.1.0/img/slides/slide-title-border.png" alt="" class="slider-content__first-line--img">
+                                <h3 class="slider-content__first-line-content">
+                                    WE WORK HARD AND PORTO HAS
+                                </h3>
+                                <img src="https://www.okler.net/previews/porto/9.1.0/img/slides/slide-title-border.png" alt="" class="slider-content__first-line--img">
+                            </div>
+                            <div class="slider-content__second-line">
+                                <h2 class="slider-content__second-line-content">
+                                    THE BEST DESIGN
+                                </h2>
+                                <img src="https://www.okler.net/previews/porto/9.1.0/img/slides/slide-blue-line-big.png" alt="" class="slider-content__second-line-img">
+                            </div>
+                            <div class="slider-content__third-line">
+                                <p class="slider-content__third-line-content">
+                                    Trusted by over 40,000 satisfied users, Porto is a huge success in the one of larest world's MarketPlace
+                                </p>
+                            </div>
+                            <div class="slider-content__fourth-line">
+                                <a href="" class="slider-content__fourth-line-link">
+                                    Get Started Now!
+                                </a>
+                            </div>
+                         </div>
+
+                     </div>
+                
+                    <div class="mySlides fades">
+                        
+                        <div style="width:100%; background-image: url('https://www.okler.net/previews/porto/9.1.0/img/slides/slide-bg-2.jpg')" class="mySlides-img">
+                            <div class="my-slide__img--br">
+                            
+                            </div>
+
+                        </div>
+                 
+                        <div class="slider-content__first">
+                            <div class="slider-content__first-line">
+                                <img src="https://www.okler.net/previews/porto/9.1.0/img/slides/slide-title-border.png" alt="" class="slider-content__first-line--img">
+                                <h3 class="slider-content__first-line-content">
+                                    WE WORK HARD AND PORTO HAS
+                                </h3>
+                                <img src="https://www.okler.net/previews/porto/9.1.0/img/slides/slide-title-border.png" alt="" class="slider-content__first-line--img">
+                            </div>
+                            <div class="slider-content__second-line">
+                                <h2 class="slider-content__second-line-content">
+                                    THE BEST DESIGN
+                                </h2>
+                               
+                            </div>
+                            <div class="slider-content__third-line">
+                                <p class="slider-content__third-line-content">
+                                    Trusted by over 40,000 satisfied users, Porto is a huge success in the one of larest world's MarketPlace
+                                </p>
+                            </div>
+                           
+                         </div>
+
+                     </div>
+                
+                    <div class="mySlides fades">
+                         
+                         <div style="width:100%; background-image: url('https://www.okler.net/previews/porto/9.1.0/img/slides/slide-bg-6.jpg')" class="mySlides-img">
+                             <div class="my-slide__img--br"></div>
+                         </div>
+                 
+                         <div class="slider-content__first">
+                            <div class="slider-content__first-line">
+                                <img src="https://www.okler.net/previews/porto/9.1.0/img/slides/slide-title-border.png" alt="" class="slider-content__first-line--img">
+                                <h3 class="slider-content__first-line-content">
+                                    we create design, we are
+                                </h3>
+                                <img src="https://www.okler.net/previews/porto/9.1.0/img/slides/slide-title-border.png" alt="" class="slider-content__first-line--img">
+                            </div>
+                            <div class="slider-content__second-lines">
+                                <span class="slider-content__second-line-porto" style="animation-delay:0.2s ; " >
+                                    p
+                                </span>
+                                <span class="slider-content__second-line-porto" style="animation-delay: 0.3s;">
+                                    o
+                                </span>
+                                <span class="slider-content__second-line-porto" style="animation-delay: 0.5s;">
+                                    r
+                                </span>
+                                <span class="slider-content__second-line-porto" style="animation-delay: 0.7s;">
+                                    t
+                                </span>
+                                <span class="slider-content__second-line-porto" style="animation-delay:1s ;">
+                                    o
+                                </span>
+                               
+                            </div>
+                            <div class="slider-content__third-line">
+                                <p class="slider-content__third-line-content">
+                                    
+                                    The best choice for your new website
+                                </p>
+                            </div>
+                           
+                         </div>
+
+                    </div>
+                    <div class="mySlides fades">
+                         
+                         <div style="width:100%; background-image: url('https://vnresource.vn/hrmblog/wp-content/uploads/2018/03/M%E1%BB%99t-s%E1%BB%91-nguy%C3%AAn-t%E1%BA%AFc-%C4%91%E1%BB%83-%C4%91%E1%BA%A1t-%C4%91%C6%B0%E1%BB%A3c-th%C3%A0nh-c%C3%B4ng-trong-%C4%91%C3%A0m-ph%C3%A1n-th%C6%B0%C6%A1ng-m%E1%BA%A1i-480x320.jpg')" class="mySlides-img">
+                             <div class="my-slide__img--br"></div>
+                         </div>
+                   
+                         <div class="slider-content__first">
+                            <div class="slider-content__first-line">
+                                <img src="https://www.okler.net/previews/porto/9.1.0/img/slides/slide-title-border.png" alt="" class="slider-content__first-line--img">
+                                <h3 class="slider-content__first-line-content">
+                                    WE WORK HARD AND PORTO HAS
+                                </h3>
+                                <img src="https://www.okler.net/previews/porto/9.1.0/img/slides/slide-title-border.png" alt="" class="slider-content__first-line--img">
+                            </div>
+                            <div class="slider-content__second-line">
+                                <h2 class="slider-content__second-line-content">
+                                    THE BEST DESIGN
+                                </h2>
+                               
+                            </div>
+                            <div class="slider-content__third-line">
+                                <p class="slider-content__third-line-content">
+                                    Trusted by over 40,000 satisfied users, Porto is a huge success in the one of larest world's MarketPlace
+                                </p>
+                            </div>
+                           
+                         </div>
+
+                     </div>
+                
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                    <div style="text-align:center" class="container-dot">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                        <span class="dot" onclick="currentSlide(4)"></span> 
+        
+                    </div>
+             </div>
+                
+            </div>
+            <!-- services -->
+            <div class="services" id="sevices">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-12 m-12 c-12">
+                            <div class="services-heading">
+                                <h2 class="services-heading-content">
+                                    Services
+                                </h2>
+                                <p class="services-heading-pg">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-12 c-12">
+                            <div class="services-item">
+                                <div class="services-item__icon">
+                                    <i class="fas fa-life-ring"></i>
+                                </div>
+                                <div class="services-item__content">
+                                    <h3 class="services-item__content-heading">
+                                        customer support
+                                    </h3>
+                                    <p class="services-item__content-pg">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-12 c-12">
+                            <div class="services-item">
+                                <div class="services-item__icon">
+                                    <i class="fas fa-layer-group"></i>
+                                </div>
+                                <div class="services-item__content">
+                                    <h3 class="services-item__content-heading">
+                                        sliders
+                                    </h3>
+                                    <p class="services-item__content-pg">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-12 c-12">
+                            <div class="services-item">
+                                <div class="services-item__icon">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                                <div class="services-item__content">
+                                    <h3 class="services-item__content-heading">
+                                       buttons
+                                    </h3>
+                                    <p class="services-item__content-pg">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-12 c-12">
+                            <div class="services-item">
+                                <div class="services-item__icon">
+                                    <i class="far fa-file"></i>
+                                </div>
+                                <div class="services-item__content">
+                                    <h3 class="services-item__content-heading">
+                                        html5/css3/js
+                                    </h3>
+                                    <p class="services-item__content-pg">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-12 c-12">
+                            <div class="services-item">
+                                <div class="services-item__icon">
+                                    <i class="far fa-user"></i>
+                                </div>
+                                <div class="services-item__content">
+                                    <h3 class="services-item__content-heading">
+                                        icons
+                                    </h3>
+                                    <p class="services-item__content-pg">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-12 c-12">
+                            <div class="services-item">
+                                <div class="services-item__icon">
+                                    <i class="fas fa-desktop"></i>
+                                </div>
+                                <div class="services-item__content">
+                                    <h3 class="services-item__content-heading">
+                                        lightbox
+                                    </h3>
+                                    <p class="services-item__content-pg">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <!-- projects -->
+            <div class="project" id="project">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-2 m-0 c-0"></div>
+                        <div class="col l-8 m-12 c-12">
+                            <div class="project-item">
+                                <h3 class="project-heading">
+                                    projects
+                                </h3>
+                                <p class="project-pg1">
+                                    LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT
+                                </p>
+                                <p class="project-pg2">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu, ac tincidunt mauris lacus sed leo. vamus suscipit molestie vestibulum.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col l-2 m-0 c-0"></div>
+                    </div>
+                    <!-- owl carousel -->
+                    <div class="row">
+                        <div class="col l-12 c-12 m-12">
+
+                            <div class="owl-carousel project-list owl-theme">
+                                <div class="item owl-carousel__item">
+                                
+                                    <a href="" class="owl-carousel-item-link">
+                                        <img src="https://www.okler.net/previews/porto/9.1.0/img/projects/project.jpg" alt="" class="owl-carousel-item-img">
+                                       
+                                            <div class="owl-carousel-item-img-bg">
+
+                                            </div>
+                                        
+                                        <span class="owl-carousel-item-dis">
+                                            Presentation
+                                        </span>
+                                        <span class="owl-carousel-item-brand">
+                                            Brand
+                                        </span>
+                                        <span class="owl-carousel-item-plus">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="item owl-carousel__item">
+                                    <a href="" class="owl-carousel-item-link">
+                                        <img src="https://www.okler.net/previews/porto/9.1.0/img/projects/project-1.jpg" alt="" class="owl-carousel-item-img">
+                                       
+                                            <div class="owl-carousel-item-img-bg">
+
+                                            </div>
+                                        
+                                        <span class="owl-carousel-item-dis">
+                                           Porto Watch
+                                        </span>
+                                        <span class="owl-carousel-item-brand">
+                                            Media
+                                        </span>
+                                        <span class="owl-carousel-item-plus">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="item owl-carousel__item">
+                                    <a href="" class="owl-carousel-item-link">
+                                        <img src="https://www.okler.net/previews/porto/9.1.0/img/projects/project-2.jpg" alt="" class="owl-carousel-item-img">
+                                       
+                                            <div class="owl-carousel-item-img-bg">
+
+                                            </div>
+                                        
+                                        <span class="owl-carousel-item-dis">
+                                           Indentity
+                                        </span>
+                                        <span class="owl-carousel-item-brand">
+                                            Logo
+                                        </span>
+                                        <span class="owl-carousel-item-plus">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="item owl-carousel__item">
+                                    <a href="" class="owl-carousel-item-link">
+                                        <img src="https://www.okler.net/previews/porto/9.1.0/img/projects/project-27.jpg" alt="" class="owl-carousel-item-img">
+                                       
+                                            <div class="owl-carousel-item-img-bg">
+
+                                            </div>
+                                        
+                                        <span class="owl-carousel-item-dis">
+                                           Porto Screens
+                                        </span>
+                                        <span class="owl-carousel-item-brand">
+                                            Website
+                                        </span>
+                                        <span class="owl-carousel-item-plus">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="item owl-carousel__item">
+                                    <a href="" class="owl-carousel-item-link">
+                                        <img src="https://www.okler.net/previews/porto/9.1.0/img/projects/project-4.jpg" alt="" class="owl-carousel-item-img">
+                                       
+                                            <div class="owl-carousel-item-img-bg">
+
+                                            </div>
+                                        
+                                        <span class="owl-carousel-item-dis">
+                                            Three bottles
+                                        </span>
+                                        <span class="owl-carousel-item-brand">
+                                            Logo
+                                        </span>
+                                        <span class="owl-carousel-item-plus">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="item owl-carousel__item">
+                                    <a href="" class="owl-carousel-item-link">
+                                        <img src="https://www.okler.net/previews/porto/9.1.0/img/projects/project-5.jpg" alt="" class="owl-carousel-item-img">
+                                       
+                                            <div class="owl-carousel-item-img-bg">
+
+                                            </div>
+                                        
+                                        <span class="owl-carousel-item-dis">
+                                            Company T-shirts
+                                        </span>
+                                        <span class="owl-carousel-item-brand">
+                                            Brand
+                                        </span>
+                                        <span class="owl-carousel-item-plus">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- clients -->
+            <div class="clients" id="client">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-2 c-0 m-0">
+
+                        </div>
+                        <div class="col l-8 c-12 m-12">
+                            <div class="clients-content">
+                                <h3 class="clients-heading">
+                                    We’re excited about Porto Template
+                                </h3>
+                                <p class="clients-pg">
+                                    30,000 CUSTOMERS IN 100 COUNTRIES USE PORTO TEMPLATE. MEET OUR CUSTOMERS.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col l-2 c-0 m-0">
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col l-12 c-12 m-12">
+                            <div class="owl-carousel clients-list owl-theme">
+                                <div class="item clients-item">
+                                    <img src="https://www.okler.net/previews/porto/9.1.0/img/logos/logo-light-4.png" alt="" class="clients-item__img">
+                                </div>
+                                <div class="item clients-item">
+                                    <img src="https://www.okler.net/previews/porto/9.1.0/img/logos/logo-light-6.png" alt="" class="clients-item__img">
+                                </div>
+                                <div class="item clients-item">
+                                    <img src="https://www.okler.net/previews/porto/9.1.0/img/logos/logo-light-1.png" alt="" class="clients-item__img">
+                                </div>
+                                <div class="item clients-item">
+                                    <img src="https://www.okler.net/previews/porto/9.1.0/img/logos/logo-light-3.png" alt="" class="clients-item__img">
+                                </div>
+                                <div class="item clients-item">
+                                    <img src="https://www.okler.net/previews/porto/9.1.0/img/logos/logo-light-5.png" alt="" class="clients-item__img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-12 c-12 m-12">
+                            <div class="owl-carousel clients-list-2 owl-theme">
+                                <div class="item clients-list-2-item">
+                                    <div class="clients-list-2-item-quote">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget risus porta, tincidunt turpis at, interdum tortor. Suspendisse potenti.
+                                    </div>
+                                    <div class="clients-list-2-item-source">
+                                       <strong> - John Smith. Okler</strong>
+                                    </div>
+                                </div>
+                                <div class="item clients-list-2-item">
+                                    <div class="clients-list-2-item-quote">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget risus porta, tincidunt turpis at, interdum tortor. Suspendisse potenti.
+                                    </div>
+                                    <div class="clients-list-2-item-source">
+                                       <strong> - John Smith. Okler</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clients-overlay">
+                </div>
+            </div>
+            <!-- team -->
+            <div class="team" id="team">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-3 m-0 c-0"></div>
+                        <div class="col l-6 c-12 m-12">
+                            <div class="team-heading">
+                                <h3 class="team-heading-content">
+                                    Team
+                                </h3>
+                                <div class="team-heading-pg">
+                                    LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-0 c-0"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-3 m-6 c-12">
+                            <div class="team-infor">
+                                <a href="" class="team-infor__link">
+                                     <img src="https://www.okler.net/previews/porto/9.1.0/img/team/team-1.jpg" alt="" class="team-infor__img">
+                                </a>
+                               <h3 class="team-infor__name">
+                                   john doe
+                               </h3>
+                               <p class="team-infor__position">
+                                   Ceo
+                               </p>
+                               <p class="team-infor__jd">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac ligula mi, non suscipitaccumsan
+                               </p>
+                               <ul class="team-infor__list">
+                                   
+                                   <li class="team-infor__item">
+                                       <a href="" class="team-infor__item-link">
+                                            <i class="fab fa-facebook-f team-infor__item-icon"></i>
+                                       </a>
+                                    </li>
+                                   <li class="team-infor__item">
+                                       <a href="" class="team-infor__item-link ">
+                                            <i class="fab fa-twitter team-infor__item-icon"></i>
+                                       </a>
+                                    </li><li class="team-infor__item">
+                                       <a href="" class="team-infor__item-link">
+                                            <i class="fab fa-linkedin-in team-infor__item-icon"></i>
+                                       </a>
+                                    </li>
+                               </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <footer>
+
+        </footer>
     </div>
+    <script src="./assits/js/header.js"></script>
+    <script src="./assits/js/slider.js"></script>
+    <script src="./assits/js/project.js"></script>
+    <script src="./assits/js/clients.js"></script>
+<script>
+    // tool tip
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();   
+    });
+</script>
+<!-- go to top -->
+<script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if($(window).scrollTop()>200)
+            {
+                $("#btn").fadeIn();
+            }
+            else
+            {
+                $("#btn").fadeOut();
+            }
+
+        })
+        $("#btn").click(function(){
+            
+            $("html,body").animate({scrollTop:0},"fast");
+
+        })
+    });
+    
+</script>
 </body>
 </html>

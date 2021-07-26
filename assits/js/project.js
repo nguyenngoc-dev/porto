@@ -1,0 +1,23 @@
+$(document).ready(function(){
+    $(".project-list").owlCarousel();
+});
+
+$('.project-list').owlCarousel({
+loop:true,
+margin:35,
+nav:true,
+responsive:{
+    0:{
+        items:1
+    },
+    739:{
+        item:2
+    },
+    1023:{
+        items:3
+    },
+    1024:{
+        items:4
+    }
+}
+})

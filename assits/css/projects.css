@@ -1,0 +1,118 @@
+.project{
+    padding: 70px 0;
+}
+
+.project-item{
+    text-align: center;
+}
+
+.project-heading{
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+
+.project-pg1{
+    text-transform: uppercase;
+    color: #777;
+    margin: 20px 0;
+}
+
+
+.project-pg2{
+    color:#777;
+    margin-top:10px;
+    margin-bottom: 50px;
+}
+/* owl carousel */
+.owl-nav{
+    display: none;
+}
+.owl-carousel__item{
+
+}
+.owl-carousel-item-link{
+    display: block;
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.owl-carousel-item-img{
+    border-radius: 4px;
+    /* background-image: url('https://www.okler.net/previews/porto/9.1.0/img/projects/project.jpg');
+    background-size: contain;
+    background-position: center; */
+    transition: all 0.5s;
+    transform: scale(1);
+}
+.owl-carousel-item-img-bg{
+    background: black;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.3;
+   
+    border-radius: 4px;
+    transition: all 0.3s;
+    display: none;
+}
+.owl-carousel-item-dis{
+   
+    position: absolute;
+    left: 0;
+    bottom: 13%;
+    padding: 13px;
+    background-color: rgba(33,37,41,.9);
+    color: white;
+}
+
+.owl-carousel-item-brand{
+    position: absolute;
+    left: 11%;
+    bottom: 6%;
+    color: white;
+    padding: 7px 10px;
+    background-color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 2px;
+}
+.owl-carousel-item-plus{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px 15px;
+    background-color: rgba(33,37,41,.9);
+    color: white;
+    border-radius: 0 4px;
+    display: none;
+}
+.owl-carousel-item-link:hover .owl-carousel-item-plus{
+    display: block;
+}
+.owl-carousel-item-link:hover .owl-carousel-item-img-bg{
+    display: block;
+    
+}
+.owl-carousel-item-link:hover 
+.owl-carousel-item-img{
+    transform: scale(1.1);
+}
+.owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 0.8;
+    margin-top: 12px;
+}
+.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: var(--primary-color);
+}
+
+
+
+
