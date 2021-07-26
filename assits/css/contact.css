@@ -13,9 +13,7 @@
     margin:48px 0;
 }
 
-.contact-heading{
 
-}
 
 .contact-heading-content{
     font-size: 3rem;
@@ -66,6 +64,9 @@
 }
 .contact-form-submit{
     width: 100%;
+}
+.contact-heading{
+    text-align: center;
 }
 
 }
